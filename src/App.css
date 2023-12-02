@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Open+Sans:ital@1&display=swap");
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+
+#main-tag {
+  width: 42rem;
+  height: fit-content;
+  max-width: 52rem;
+  margin-top: 4rem;
+}
+
+/* -------------------------------------------Header Section starts-------------------------------------------*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.form .input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* border: .1px solid gray; */
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(0deg, 0%, 96%);
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.5rem;
+  color: rgb(59, 58, 58);
+  padding: 0.5rem 1rem;
+  background-color: hsl(0deg, 0%, 96%);
+}
+
+.input-container .search {
+  font-size: 1.5rem;
+  color: rgb(59, 58, 58);
+  padding: 0.5rem 1rem;
+  background-color: hsl(0deg, 0%, 96%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.result-container {
+  text-align: left;
+  width: 100%;
+  margin-top: 3rem;
+}
+/* ------------------------------------------Header Section ends--------------------------------------------*/
+
+/* ----------------------------------------Main Section starts-----------------------------------------------*/
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.content-box {
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+
+.content-box .result-container .phonetics {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-box:nth-of-type(2) .phonetics,
+.content-box:nth-of-type(3) .phonetics,
+.content-box:nth-of-type(4) .phonetics,
+.content-box:nth-of-type(5) .phonetics,
+.content-box:nth-of-type(6) .phonetics {
+  display: none;
+}
+
+.phonetics .play-icon {
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.play-icon:hover {
+  transform: scale(1.1);
+}
+
+.result-container .meaning {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+.result-container .word .POS {
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-self: center;
+}
+.POS::after {
+  content: " ";
+  align-self: center;
+  display: flex;
+  width: 80%;
+  margin-left: 70px;
+  background-color: hsl(0deg, 0%, 91%);
+  height: 1.5px;
+}
+
+.link {
+  text-decoration: none;
+  color: #7f7f7f !important;
+}
+
+.defination .eg {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #7f7f7f;
+}
+/* -------------------------------------------Main Section ends---------------------------------------------*/
+/* -------------------------------------------Dark mode starts---------------------------------------------*/
+
+.dark-mode {
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+}
+
+.theme-toggler {
+  transition: 0.3s linear;
+}
+
+/* ---------------------------------------------Dark mode ends-----------------------------------------------*/
