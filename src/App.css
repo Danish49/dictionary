@@ -159,3 +159,22 @@
 }
 
 /* ---------------------------------------------Dark mode ends-----------------------------------------------*/
+
+@media(max-width:480px){
+  html{
+    font-size: 50%;
+  }
+
+  #main-tag{
+    width: 90vw;
+    margin-top: 10rem;
+  }
+
+  .play-icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
