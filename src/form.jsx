@@ -12,9 +12,10 @@ export default function Form() {
     setIsLoading(true);
     setMeanings([]);
     setError(null);
+    
     try {
       const response = await fetch(
-        `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
+        `https://freedictionaryapi.com/api/v1/entries/en/${word}`
       );
 
       if (response.status === 404) {
@@ -37,7 +38,7 @@ export default function Form() {
     const fetchDefinationOnMount = () => {
       async function fetchData() {
         const response = await fetch(
-          `https://api.dictionaryapi.dev/api/v2/entries/en/dart`
+          `https://freedictionaryapi.com/api/v1/entries/en/hello`
         );
         const data = await response.json();
         setMeanings(data);
